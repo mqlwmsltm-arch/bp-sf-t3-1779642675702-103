@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · sf-t3-1779642675702-103</title>
+  <meta name="description" content="sf-t3-1779642675702-103에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-103.maphoshirts.com/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* Design System: Swiss Minimal (Mono-chrome) */
+ /* Font: Inter, system-ui */
+ /* Space: Airy */
+ /* Tone: Provocative */
+ 
+ :root {
+ --bg-color: #ffffff;
+ --text-primary: #111111;
+ --text-secondary: #555555;
+ --accent-color: #000000;
+ --border-color: #e0e0e0;
+ --spacing-unit: 8px;
+ --container-width: 1200px;
+ --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+
+ body {
+ font-family: var(--font-main);
+ background-color: var(--bg-color);
+ color: var(--text-primary);
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ /* Typography */
+ h1, h2, h3, h4 {
+ font-weight: 700;
+ letter-spacing: -0.03em;
+ line-height: 1.2;
+ margin-bottom: 1.5rem;
+ }
+
+ h1 {
+ font-size: clamp(2.5rem, 5vw, 4.5rem);
+ margin-bottom: 2rem;
+ }
+
+ h2 {
+ font-size: clamp(1.8rem, 3vw, 2.5rem);
+ margin-top: 3rem;
+ border-bottom: 2px solid var(--accent-color);
+ display: inline-block;
+ padding-bottom: 0.5rem;
+ }
+
+ h3 {
+ font-size: 1.5rem;
+ margin-top: 2rem;
+ }
+
+ p {
+ font-size: 1.125rem;
+ color: var(--text-secondary);
+ margin-bottom: 1.5rem;
+ max-width: 70ch;
+ }
+
+ a {
+ color: var(--text-primary);
+ text-decoration: none;
+ border-bottom: 1px solid var(--text-primary);
+ transition: all 0.3s ease;
+ }
+
+ a:hover {
+ background-color: var(--accent-color);
+ color: var(--bg-color);
+ }
+
+ /* Layout Utilities */
+ .container {
+ width: 90%;
+ max-width: var(--container-width);
+ margin: 0 auto;
+ padding: 0 var(--spacing-unit);
+ }
+
+ .section {
+ padding: 6rem 0;
+ }
+
+ /* Navigation */
+ .nav-present {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 2rem 0;
+ border-bottom: 1px solid var(--border-color);
+ }
+
+ .logo {
+ font-weight: 900;
+ font-size: 1.5rem;
+ letter-spacing: -0.05em;
+ }
+
+ .nav-links {
+ display: flex;
+ gap: 2rem;
+ }
+
+ .nav-links a {
+ font-weight: 600;
+ font-size: 0.9rem;
+ text-transform: uppercase;
+ border-bottom: none;
+ }
+
+ .nav-links a:hover {
+ background: none;
+ color: var(--text-secondary);
+ text-decoration: underline;
+ }
+
+ .hamburger-menu {
+ display: none;
+ cursor: pointer;
+ flex-direction: column;
+ gap: 5px;
+ }
+
+ .hamburger-menu span {
+ width: 25px;
+ height: 2px;
+ background-color: var(--text-primary);
+ }
+
+ /* Hero Section */
+ .hero {
+ padding: 8rem 0;
+ text-align: left;
+ }
+
+ .hero-meta {
+ font-size: 0.875rem;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ color: var(--text-secondary);
+ margin-bottom: 1rem;
+ display: block;
+ }
+
+ /* Content Grid */
+ .content-grid {
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ gap: 4rem;
+ margin-top: 4rem;
+ }
+
+ .main-article img {
+ width: 100%;
+ height: auto;
+ margin: 2rem 0;
+ filter: grayscale(100%);
+ border: 1px solid var(--border-color);
+ }
+
+ .sidebar {
+ position: sticky;
+ top: 2rem;
+ height: fit-content;
+ }
+
+ .card {
+ background: #f9f9f9;
+ padding: 2rem;
+ margin-bottom: 2rem;
+ border: 1px solid var(--border-color);
+ }
+
+ .card h4 {
+ font-size: 1.2rem;
+ margin-bottom: 1rem;
+ }
+
+ .card ul {
+ list-style: none;
+ }
+
+ .card li {
+ margin-bottom: 0.8rem;
+ font-size: 0.95rem;
+ color: var(--text-secondary);
+ padding-left: 1rem;
+ position: relative;
+ }
+
+ .card li::before {
+ content: "•";
+ position: absolute;
+ left: 0;
+ color: var(--accent-color);
+ }
+
+ /* FAQ Section */
+ .faq-section {
+ margin-top: 6rem;
+ border-top: 1px solid var(--border-color);
+ padding-top: 4rem;
+ }
+
+ .faq-item {
+ margin-bottom: 2rem;
+ }
+
+ .faq-question {
+ font-weight: 700;
+ font-size: 1.2rem;
+ margin-bottom: 0.5rem;
+ cursor: pointer;
+ }
+
+ .faq-answer {
+ color: var(--text-secondary);
+ font-size: 1rem;
+ }
+
+ /* CTA Section */
+ .cta-section {
+ background-color: var(--accent-color);
+ color: var(--bg-color);
+ text-align: center;
+ padding: 6rem 0;
+ margin-top: 6rem;
+ }
+
+ .cta-section h2 {
+ color: var(--bg-color);
+ border-bottom: none;
+ font-size: 3rem;
+ }
+
+ .cta-section p {
+ color: #cccccc;
+ margin: 0 auto 3rem auto;
+ }
+
+ .btn {
+ display: inline-block;
+ background-color: var(--bg-color);
+ color: var(--accent-color);
+ padding: 1rem 2.5rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ border: none;
+ cursor: pointer;
+ transition: transform 0.2s;
+ }
+
+ .btn:hover {
+ transform: scale(1.05);
+ background-color: #eeeeee;
+ color: #000;
+ }
+
+ .tel-link {
+ display: block;
+ margin-top: 1rem;
+ font-size: 0.9rem;
+ color: #888;
+ text-decoration: none;
+ border: none;
+ }
+
+ /* Footer */
+ footer {
+ padding: 4rem 0;
+ border-top: 1px solid var(--border-color);
+ margin-top: 4rem;
+ font-size: 0.875rem;
+ color: var(--text-secondary);
+ display: flex;
+ justify-content: space-between;
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ }
+ .hamburger-menu {
+ display: flex;
+ }
+ .content-grid {
+ grid-template-columns: 1fr;
+ gap: 2rem;
+ }
+ .sidebar {
+ position: static;
+ order: -1;
+ }
+ h1 {
+ font-size: 2.5rem;
+ }
+ .cta-section h2 {
+ font-size: 2rem;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · sf-t3-1779642675702-103">
+  <meta property="og:description" content="sf-t3-1779642675702-103에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-103.maphoshirts.com/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="container">
+ <nav class="nav-present">
+ <div class="logo">momcafe.</div>
+ <div class="nav-links">
+ <a href="#">Home</a>
+ <a href="#">Services</a>
+ <a href="#">Case Studies</a>
+ <a href="#">Contact</a>
+ </div>
+ <div class="hamburger-menu">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ </nav>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 23개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260815-0030.html">마포 지역 서버 웜업을 통한 효율적인 검색엔진 최적화 구축 방안</a>
+        <p class="post-item__summary">온라인에서 웹사이트의 검색 노출을 높이기 위해 다양한 자동화 도구를 활용하는 기업이 늘고 있습니다. 특히 마포 지역에서 디지털 마케팅 인프라를 구축하려는 시도 중 하나로 서버 웜업 과정이 주목받고 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-001-8vu5iv.html">서버 웜업 해결 방법 총정리</a>
+        <p class="post-item__summary">아, 진짜 2023년 겨울, LG 트롬 세탁기에 에러코드 dE2가 뜬 거 같았어요. 이게 배수 필터 때문이 아니었더라면.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-002-8vu5iv.html">SEO 오토파일럿 가격 처음 알아볼 때 실제로 많이 묻는 질문 5가지</a>
+        <p class="post-item__summary">마포 지역에서 서버 웜업 서비스를 운영하며 많은 사업자분께 SEO 오토파일럿 가격에 대한 문의를 받습니다. 특히 검색 엔진 최적화 작업을 자동화하려는 분들은 비용 대비 효율성에 대해 고민이 많습니다</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
